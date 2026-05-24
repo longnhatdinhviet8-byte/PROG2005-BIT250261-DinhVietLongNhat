@@ -22,7 +22,7 @@ tuoi = int(input("nhập tuổi của bạn: "))
 if (tuoi >= 1) and(tuoi <= 120):
     print("tuổi của bạn nằm trong khoảng từ 1 đến 120")
 else:
-    print("tuổi của bạn không năm trong khoẳng từ 1 đến 120") 
+    print("tuổi của bạn không nằm trong khoẳng từ 1 đến 120") 
 #bài 5
 chuoi = input("nhập vào chuỗi kí tự : ")
 dem=0
@@ -35,8 +35,8 @@ do_c=float(input("nhập vào độ c: "))
 do_f=do_c * 9/5 + 32
 print (f"dộ F tương ứng là : {do_f}")
 # bài 7 
-can = float (input("nhập vào cân năng cuat bạn (kg) : "))
-chieu_cao = float(input("nhập vào chiều cao của bạn (m0): "))
+can = float (input("nhập vào cân năng của bạn (kg) : "))
+chieu_cao = float(input("nhập vào chiều cao của bạn (m): "))
 bmi = round((can / pow(chieu_cao, 2)), 2)
 print (f"chỉ số BMI của bạn là : {bmi}")
 # bài 8
@@ -57,14 +57,14 @@ if(can < 0):
 else:
     print("căn bậc 2 của số là : ", math.sqrt(can))
 # bài 10 
-so_hs= int(input("nhập vào số học sinh : "))
+so_hs= 3
 bangdiem = []
 diem = 0
 for i in range(so_hs):
     diem = list(map(int, input(f"nhập lần lượt điểm toán-lý-hóa của học sinh thứ {i+1}").split()))[:3]
     bangdiem. append(diem)
 kt=int(input("nhập số học sinh cần kiểm tra"))
-if kt <so_hs:
+if kt <= so_hs:
     print(f"điểm trung bình của bạn {kt} là : ",round((sum(bangdiem[kt-1])/3),2))
 else:
     print("số học sinh không tồn tại")
